@@ -10,9 +10,18 @@ function sumMultiple(f,m){
   }
   return total;
 }
+function calculate() {
+  let fText=document.getElementById("fInput").value;
+  let mText=document.getElementById("mInput").value;
+  let f=fText.split(",").map(Number);
+  let m=mText.split(",").map(Number);
+  let result=sumMultiples(f,m);
+  document.getElementById("output").innerHTML="Sum = " +result;
+}
 let f =[2,3];
 let m =[1,2,3,4,5,6,7,8,9];
 let result= sumMultiple(f,m);
 console.log(result);
 alert(result);
+
 
