@@ -15,7 +15,7 @@ function calculate() {
   let mText=document.getElementById("mInput").value;
   let f=fText.split(",").map(Number);
   let m=mText.split(",").map(Number);
-  let result=sumMultiples(f,m);
+  let result=sumMultiple(f,m);
   document.getElementById("output").innerHTML="Sum = " +result;
 }
 
